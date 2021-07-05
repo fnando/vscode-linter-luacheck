@@ -1,12 +1,12 @@
 import {
-  LinterCallFunction,
+  LinterGetOffensesFunction,
   LinterOffense,
   LinterOffenseSeverity,
 } from "vscode-linter-api";
 
 const lineMatcher = /^stdin:(\d+):(\d+)-(\d+): \((.*?)\) (.+)$/;
 
-export const call: LinterCallFunction = ({ stdout, uri }) => {
+export const getOffenses: LinterGetOffensesFunction = ({ stdout, uri }) => {
   return stdout
     .split(/\r?\n/)
     .map((line) => {

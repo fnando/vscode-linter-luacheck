@@ -24,14 +24,14 @@ suite("Extension Test Suite", () => {
   test("returns offenses", () => {
     const uri = Uri.parse("/file.lua");
 
-    const offenses = linter.call({
+    const offenses = linter.getOffenses({
       stdout,
       stderr: "",
       uri,
       status: 0,
     });
 
-    assert.equal(offenses.length, 2);
+    assert.strictEqual(offenses.length, 2);
 
     assertOffense(offenses[0], {
       uri,
