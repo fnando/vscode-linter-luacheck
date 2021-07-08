@@ -3,6 +3,10 @@
 All notable changes to the "linter-luacheck" extension will be documented in
 this file.
 
+## 0.0.3
+
+- Fix repository link.
+
 ## 0.0.2
 
 - Comply with new linter API.

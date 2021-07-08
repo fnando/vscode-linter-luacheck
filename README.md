@@ -1,7 +1,7 @@
 # luacheck linter for VSCode
 
 The luacheck linter extension for
-[fnando.linter](https://github.com/fnando/vscode-linter).
+[Linter](https://github.com/fnando/vscode-linter).
 
 ## Usage
 
